@@ -17,6 +17,8 @@ function renderLicenseBadge(license) {
     return '![License: ISC](https://img.shields.io/badge/License-ISC-green.svg)'
   } else if (license === 'The Unlicense'){
     return '![License: Unlicense](https://img.shields.io/badge/license-Unlicense-red.svg)'
+  } else {
+    return ''
   }
 }
 
