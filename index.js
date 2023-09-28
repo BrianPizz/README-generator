@@ -55,6 +55,14 @@ const questions = [
     {
         name: 'test',
         message: 'Provide instructions on how to test your application.',
+    },
+    {
+        name: 'github',
+        message: 'Provide your GitHub username.',
+    },
+    {
+        name: 'email',
+        message: 'Provide your email.',
     }
 ];
 

@@ -79,6 +79,8 @@ function generateMarkdown(data) {
   * [Usage](#usage)
   * [Credits](#credits)
   * [License](#license)
+  * [Tests](#tests)
+  * [Questions](#questions)
 
   ## Installation
   ${data.install}
@@ -91,6 +93,15 @@ function generateMarkdown(data) {
 
   ${renderLicenseSection(data.license)}
 
+  ## How to contribute
+  [Contributor Covenant](https://www.contributor-covenant.org/)
+
+  ## Tests
+  ${data.test}
+
+  ## Questions
+  [GitHub](https://github.com/${data.github})
+  [Email](mailto:${data.email})
 `;
 }
 
