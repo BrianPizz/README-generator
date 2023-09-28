@@ -32,8 +32,14 @@ const questions = [
         message: 'Provide instructions and examples for use.',
     },
     {
+        name: 'confirmCredits',
+        type: 'confirm',
+        message: 'Did you have any collaborators?',
+    },
+    {
         name: 'credits',
-        message: 'List your collaborators, if any.',
+        message: 'Please list your collaborators?',
+        when: (answers) => answers.confirmCredits === true,
     },
     {
         name: 'license',
@@ -41,6 +47,15 @@ const questions = [
         message: 'Choose a license.',
         choices: ['GNU AGPLv3','GNU GPLv3','GNU LGPLv3','Mozilla Public License 2.0','Apache License 2.0','MIT License','Boost Software License 1.0','The Unlicense']
     },
+    {
+        name: 'confirmContribute',
+        type: 'confirm',
+        message: 'Would you like to allow others to contribute?',
+    },
+    {
+        name: 'test',
+        message: 'Provide instructions on how to test your application.',
+    }
 ];
 
 // TODO: Create a function to write README file
@@ -48,7 +63,9 @@ function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
 function init() {
-    
+    inquirer
+        .prompt(questions)
+        .then(answers => console.log(answers))
 }
 
 // Function call to initialize app
