@@ -42,7 +42,7 @@ const questions = [
         name: 'license',
         type: 'list',
         message: 'Choose a license.',
-        choices: ['GNU AGPLv3','GNU GPLv3','GNU LGPLv3','Mozilla Public License 2.0','Apache License 2.0','MIT License','ISC License (ISC)','The Unlicense', 'none']
+        choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'ISC License (ISC)', 'The Unlicense', 'none']
     },
     {
         name: 'confirmContribute',
@@ -65,8 +65,8 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, (err) => 
-    err ? console.error(err) : console.log('Success!') )
+    fs.writeFile(fileName, data, (err) =>
+        err ? console.error(err) : console.log('Success!'))
 }
 
 // TODO: Create a function to initialize app
