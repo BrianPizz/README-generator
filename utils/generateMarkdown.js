@@ -122,6 +122,11 @@ ${data.install}
 ## Usage
 ${data.usage}
 
+[Deployment Link](${data.deployment})
+
+
+![${data.alt}](assets/images/${data.image}.png)
+
 ${renderCredits(data.confirmCredits, data.credits)}
 
 ${renderLicenseSection(data.license)}

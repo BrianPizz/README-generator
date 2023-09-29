@@ -29,6 +29,18 @@ const questions = [
         message: 'Provide instructions and examples for use.',
     },
     {
+        name: 'image',
+        message: 'Provide screenshot file name.',
+    },
+    {
+        name: 'alt',
+        message: 'Provide screenshot alt text.',
+    },
+    {
+        name: 'deployment',
+        message: 'Provide deployment link.',
+    },
+    {
         name: 'confirmCredits',
         type: 'confirm',
         message: 'Did you have any collaborators?',
@@ -73,7 +85,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer
         .prompt(questions)
-        .then(answers => writeToFile('README.md', generateMarkdown(answers)))
+        .then(answers => writeToFile('TEST.md', generateMarkdown(answers)))
         
 }
 

@@ -23,6 +23,9 @@ Make sure you have Node and Inquirer installed, clone this repository, navigate 
 Answer all of the prompts and you will have a professional README.md for your project
 
 
+![screenshot](assets/images/screenshot.png)
+
+
 
 
 ## License
