@@ -15,7 +15,8 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer
         .prompt(questions)
-        .then(answers => writeToFile('TEST.md', generateMarkdown(answers)))
+        // README is generated in 'dist' folder
+        .then(answers => writeToFile('./dist/README.md', generateMarkdown(answers)))
 }
 // Function call to initialize app
 init();
