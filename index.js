@@ -2,10 +2,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown.js')
-const userPrompts = require('./utils/userPrompts.js')
-// Array of questions for user input
-// Prompts are stored in file userPrompts.js and are copied using the spread operator
-const questions = [...userPrompts];
+const questions = require('./utils/questions.js')
 // Function to write README file from exported markdown
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) =>
@@ -14,7 +11,8 @@ function writeToFile(fileName, data) {
 // Function to initialize app
 function init() {
     inquirer
-        .prompt(questions)
+        // Questions are stored in file and are copied using the spread operator
+        .prompt([...questions])
         // README is generated in 'dist' folder
         .then(answers => writeToFile('./dist/README.md', generateMarkdown(answers)))
 }

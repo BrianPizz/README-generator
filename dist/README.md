@@ -1,46 +1,49 @@
 
 ![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)
-# n
+# f
 
 ## Description
-* n
-* n
-* n
+* f
+* f
+* f
 
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
-
+* [Credits](#credits)
 * [License](#license)
-
+* [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
 
 ## Installation
-n
+f
 
 ## Usage
-n
+f
 
-[Deployment Link](n)
-
-
-![n](assets/images/screenshot.png)
+[Deployment Link](f)
 
 
+![f](assets/images/f.png)
+
+
+## Credits
+f
 
 
 ## License
 This application is covered under:
 [AGPL v3](https://choosealicense.com/licenses/agpl-3.0/)
 
-
+## Contributing
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
 
 ## Tests
-n
+f
 
 ## Questions
 
 For any further questions contact:  
-[GitHub](https://github.com/n)  
-[Email](mailto:n)
+[GitHub](https://github.com/f)  
+[Email](mailto:f)

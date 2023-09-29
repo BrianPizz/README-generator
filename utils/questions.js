@@ -1,5 +1,5 @@
 // Array of questions for user input
-const userPrompts = [
+const questions = [
     {
         name: 'title',
         message: 'What is the title of your project?',
@@ -71,4 +71,4 @@ const userPrompts = [
     }
 ];
 // Array is exported
-module.exports = userPrompts;
+module.exports = questions;
