@@ -1,5 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// If there is a license, a license badge is returned based on which license is passed in
 function renderLicenseBadge(license) {
   if (license === 'Apache License 2.0') {
     return '![License: Apache License 2.0](https://img.shields.io/badge/License-Apache_2.0-yellow.svg)'
@@ -21,9 +20,7 @@ function renderLicenseBadge(license) {
     return ''
   }
 }
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// If there is a license, a license link is returned based on which license is passed in
 function renderLicenseLink(license) {
   if (license === 'Apache License 2.0') {
     return '[Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/)'
@@ -45,7 +42,7 @@ function renderLicenseLink(license) {
     return ''
   }
 }
-
+// If there is a license, a license section returned based on which license is passed in
 function renderLicenseSection(license) {
   if (license === 'none') {
     return ''
@@ -62,8 +59,7 @@ function renderCredits(confirmCredit, credits) {
   if (confirmCredit) {
     return `
 ## Credits
-${credits}
-    `
+${credits}`
   } else {
     return ''
   }
@@ -71,38 +67,59 @@ ${credits}
 
 function renderContribution(confirmContribute) {
   if (confirmContribute) {
-    return `
-## How to contribute
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
-    `
+    return `## Contribution
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)`
   } else {
     return ''
   }
 }
 
+function creditsLink(confirm) {
+  if (confirm) {
+    return `* [Credits](#credits)`
+  } else {
+    return '';
+  }
+}
+
+function licenseLink(license) {
+  if (license === 'none') {
+    return ''
+  } else {
+    return `* [License](#license)`;
+  }
+}
+
+function contributeLink(confirm) {
+  if (confirm) {
+    return `* [Contribution](#contribution)`
+  }
+}
+
 function generateMarkdown(data) {
   return `
-  ${renderLicenseBadge(data.license)}
-  # ${data.title}
+${renderLicenseBadge(data.license)}
+# ${data.title}
 
-  ## Description
-  * ${data.reason}
-  * ${data.problem}
-  * ${data.learn}
+## Description
+* ${data.reason}
+* ${data.problem}
+* ${data.learn}
 
-  ## Table of Contents
-  * [Installation](#installation)
-  * [Usage](#usage)
-  * [Credits](#credits)
-  * [License](#license)
-  * [Tests](#tests)
-  * [Questions](#questions)
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+${creditsLink(data.confirmCredits)}
+${licenseLink(data.license)}
+${contributeLink(data.confirmContribute)}
+* [Tests](#tests)
+* [Questions](#questions)
 
-  ## Installation
-  ${data.install}
+## Installation
+${data.install}
 
-  ## Usage
-  ${data.usage}
+## Usage
+${data.usage}
 
 ${renderCredits(data.confirmCredits, data.credits)}
 
@@ -110,12 +127,12 @@ ${renderLicenseSection(data.license)}
 
 ${renderContribution(data.confirmContribute)}
 
-  ## Tests
-  ${data.test}
+## Tests
+${data.test}
 
-  ## Questions
-  [GitHub](https://github.com/${data.github})
-  [Email](mailto:${data.email})
+## Questions
+[GitHub](https://github.com/${data.github})  
+[Email](mailto:${data.email})
 `;
 }
 
