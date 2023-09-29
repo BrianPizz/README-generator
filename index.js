@@ -73,7 +73,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer
         .prompt(questions)
-        .then(answers => writeToFile('TEST.md', generateMarkdown(answers)))
+        .then(answers => writeToFile('README.md', generateMarkdown(answers)))
         
 }
 

@@ -133,7 +133,7 @@ ${data.test}
 
 ## Questions
 
-For any further questions contact:
+For any further questions contact:  
 [GitHub](https://github.com/${data.github})  
 [Email](mailto:${data.email})
 `;
