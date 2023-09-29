@@ -66,7 +66,7 @@ ${credits}`;
 
 function renderContribution(confirmContribute) {
   if (confirmContribute) {
-    return `## Contribution
+    return `## Contributing
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)`;
   } else {
     return '';
@@ -91,7 +91,7 @@ function licenseLink(license) {
 
 function contributeLink(confirm) {
   if (confirm) {
-    return `* [Contribution](#contribution)`;
+    return `* [Contributing](#contributing)`;
   } else {
     return '';
   };
@@ -132,6 +132,8 @@ ${renderContribution(data.confirmContribute)}
 ${data.test}
 
 ## Questions
+
+For any further questions contact:
 [GitHub](https://github.com/${data.github})  
 [Email](mailto:${data.email})
 `;
