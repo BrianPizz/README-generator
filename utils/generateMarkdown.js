@@ -53,7 +53,7 @@ This application is covered under:
 ${renderLicenseLink(license)}`;
   };
 };
-
+// If the user confirms credits then they will be added
 function renderCredits(confirmCredit, credits) {
   if (confirmCredit) {
     return `
@@ -63,7 +63,7 @@ ${credits}`;
     return '';
   };
 };
-
+// If the user wishes to allow contribution the the contributer covenant is added
 function renderContribution(confirmContribute) {
   if (confirmContribute) {
     return `## Contributing
@@ -72,7 +72,7 @@ function renderContribution(confirmContribute) {
     return '';
   };
 };
-
+// If there are credits then it will be added to table of contents
 function creditsLink(confirm) {
   if (confirm) {
     return `* [Credits](#credits)`;
@@ -80,7 +80,7 @@ function creditsLink(confirm) {
     return '';
   };
 };
-
+// If there is a license then it will be added to table of contents
 function licenseLink(license) {
   if (license === 'none') {
     return '';
@@ -88,7 +88,7 @@ function licenseLink(license) {
     return `* [License](#license)`;
   };
 };
-
+// If contributing is allowes then it will be added to table of contents
 function contributeLink(confirm) {
   if (confirm) {
     return `* [Contributing](#contributing)`;
@@ -96,7 +96,7 @@ function contributeLink(confirm) {
     return '';
   };
 };
-
+// Markdown is generated with user input data
 function generateMarkdown(data) {
   return `
 ${renderLicenseBadge(data.license)}
@@ -143,5 +143,5 @@ For any further questions contact:
 [Email](mailto:${data.email})
 `;
 };
-
+// generated markdown is exported to index.js
 module.exports = generateMarkdown;
