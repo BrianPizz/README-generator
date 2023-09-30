@@ -20,7 +20,7 @@
 Make sure you have Node and Inquirer installed, clone this repository, navigate to it and simply run 'node index.js' in your terminal
 
 ## Usage
-Answer all of the prompts and you will have a professional README.md for your project
+Answer all of the prompts and you will have a professional README.md for your project, file will be generated in the 'dist' folder.
 
 
 ![screenshot](assets/images/screenshot.png)
@@ -41,4 +41,4 @@ Test the application by updating the current README.md with your own answers
 
 For any further questions contact:  
 [GitHub](https://github.com/BrianPizz)  
-[Email](mailto:bpizzimentijr@gmail.com)
+[Email](mailto:bpizzimentijr@outlook.com)
