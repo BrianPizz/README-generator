@@ -1,49 +1,47 @@
 
-![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)
-# f
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+# README generator
 
 ## Description
-* f
-* f
-* f
+* To build README files for projects
+* Creating a README for each project
+* I learned Node.js and Inquirer
 
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
-* [Credits](#credits)
+
 * [License](#license)
 * [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
 
 ## Installation
-f
+Install npm and Inquirer
 
 ## Usage
-f
+Run the index.js file and answer the prompts
 
-[Deployment Link](f)
-
-
-![f](assets/images/f.png)
+[Deployment Link](github.io)
 
 
-## Credits
-f
+![placeholder](assets/images/screenshot.png)
+
+
 
 
 ## License
 This application is covered under:
-[AGPL v3](https://choosealicense.com/licenses/agpl-3.0/)
+[MIT](https://choosealicense.com/licenses/mit/)
 
 ## Contributing
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
 
 ## Tests
-f
+Answer prompts
 
 ## Questions
 
 For any further questions contact:  
-[GitHub](https://github.com/f)  
-[Email](mailto:f)
+[GitHub](https://github.com/BrianPizz)  
+[Email](mailto:B@gmail.com)
