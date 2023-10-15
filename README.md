@@ -41,4 +41,3 @@ Test the application by updating the current README.md with your own answers
 
 For any further questions contact:  
 [GitHub](https://github.com/BrianPizz)  
-[Email](mailto:bpizzimentijr@outlook.com)
